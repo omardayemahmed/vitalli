@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Patient, PatientStatus, TriageLevel, PathwayStep } from '../types.ts';
 import { PatientCard } from './PatientCard.tsx';
@@ -425,7 +424,6 @@ export const PhysicianPlatform: React.FC<PhysicianPlatformProps> = ({ queue, onU
                
                <div className="flex gap-4">
                  <button onClick={() => setSelectedPatientId(null)} className="px-8 py-4 rounded-2xl bg-white text-slate-500 font-black uppercase text-xs tracking-widest border border-slate-200 hover:bg-slate-100 transition-all">Defer</button>
-                 {/* Fixed: Added missing onClick prefix for handleAdmit */}
                  <button onClick={handleAdmit} className="flex items-center gap-3 px-8 py-4 rounded-2xl bg-indigo-600 text-white font-black uppercase text-xs tracking-widest hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100">
                    <Building size={18} /> Admit to Ward
                  </button>
