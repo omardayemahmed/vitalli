@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { TriageLevel } from './types';
+import { TriageLevel } from './types.ts';
 
 export const COLORS = {
   TEAL: 'bg-teal-600',

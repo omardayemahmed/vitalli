@@ -1,8 +1,7 @@
-
 import React, { useState, useMemo } from 'react';
-import { Patient, PatientStatus, TriageLevel } from '../types';
+import { Patient, PatientStatus, TriageLevel } from '../types.ts';
 import { Search, Filter, Calendar, ChevronRight, User, ArrowUpRight, CheckCircle2, Clock, AlertCircle, History as HistoryIcon, Ticket } from 'lucide-react';
-import { TRIAGE_LABELS } from '../constants';
+import { TRIAGE_LABELS } from '../constants.tsx';
 
 interface HistoryPlatformProps {
   patients: Patient[];

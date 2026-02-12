@@ -1,8 +1,7 @@
-
 import React, { useState } from 'react';
-import { Patient, PatientStatus, TriageLevel, PathwayStep } from '../types';
-import { PatientCard } from './PatientCard';
-import { getPatientSummary } from '../geminiService';
+import { Patient, PatientStatus, TriageLevel, PathwayStep } from '../types.ts';
+import { PatientCard } from './PatientCard.tsx';
+import { getPatientSummary } from '../geminiService.ts';
 import { HeartPulse, Building, Home, RotateCcw, BookOpen, Loader2, Sparkles, Activity, Heart, Wind, Thermometer, ArrowDownCircle } from 'lucide-react';
 
 interface ERDoctorPlatformProps {

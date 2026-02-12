@@ -1,6 +1,5 @@
-
 import { GoogleGenAI, Type } from "@google/genai";
-import { TriageLevel, Vitals, Patient, Sex } from "./types";
+import { TriageLevel, Vitals, Patient, Sex } from "./types.ts";
 
 // Always use the API key directly from process.env.API_KEY as per guidelines.
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });

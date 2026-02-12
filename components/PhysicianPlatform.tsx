@@ -1,7 +1,8 @@
+
 import React, { useState } from 'react';
-import { Patient, PatientStatus, TriageLevel, PathwayStep } from '../types';
-import { PatientCard } from './PatientCard';
-import { getPatientSummary } from '../geminiService';
+import { Patient, PatientStatus, TriageLevel, PathwayStep } from '../types.ts';
+import { PatientCard } from './PatientCard.tsx';
+import { getPatientSummary } from '../geminiService.ts';
 import { Search, AlertTriangle, CheckCircle, Stethoscope, MessageSquare, BookOpen, Loader2, Sparkles, Activity, Heart, Wind, Thermometer, Building, ArrowDownCircle, Calendar, X, Check, FlaskConical, Scan, Lock, ChevronLeft } from 'lucide-react';
 
 interface PhysicianPlatformProps {
@@ -171,7 +172,7 @@ export const PhysicianPlatform: React.FC<PhysicianPlatformProps> = ({ queue, onU
 
                       <button 
                         onClick={() => handleFollowUpChoice(true)}
-                        className="group p-8 rounded-[2.5rem] bg-indigo-600 border-2 border-transparent hover:bg-indigo-700 transition-all flex flex-col items-center text-center shadow-xl shadow-indigo-100"
+                        className="group p-8 rounded-[2.5rem] bg-indigo-600 border-2 border-transparent hover:border-indigo-700 transition-all flex flex-col items-center text-center shadow-xl shadow-indigo-100"
                       >
                         <div className="w-14 h-14 rounded-full bg-white/20 shadow-sm flex items-center justify-center text-white mb-4"><Check size={28} /></div>
                         <span className="font-black text-white uppercase tracking-widest text-[10px]">Schedule Visit</span>
@@ -424,6 +425,7 @@ export const PhysicianPlatform: React.FC<PhysicianPlatformProps> = ({ queue, onU
                
                <div className="flex gap-4">
                  <button onClick={() => setSelectedPatientId(null)} className="px-8 py-4 rounded-2xl bg-white text-slate-500 font-black uppercase text-xs tracking-widest border border-slate-200 hover:bg-slate-100 transition-all">Defer</button>
+                 {/* Fixed: Added missing onClick prefix for handleAdmit */}
                  <button onClick={handleAdmit} className="flex items-center gap-3 px-8 py-4 rounded-2xl bg-indigo-600 text-white font-black uppercase text-xs tracking-widest hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-100">
                    <Building size={18} /> Admit to Ward
                  </button>

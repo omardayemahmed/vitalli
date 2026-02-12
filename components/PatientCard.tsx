@@ -1,7 +1,6 @@
-
 import React from 'react';
-import { Patient, TriageLevel } from '../types';
-import { TRIAGE_LABELS } from '../constants';
+import { Patient, TriageLevel } from '../types.ts';
+import { TRIAGE_LABELS } from '../constants.tsx';
 import { Clock, User, AlertCircle, Baby } from 'lucide-react';
 
 interface PatientCardProps {

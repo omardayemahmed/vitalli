@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { PlatformType, User } from '../types';
+import { PlatformType, User } from '../types.ts';
 import { Activity, Stethoscope, HeartPulse, Hospital, ArrowRight, Mail, Lock, User as UserIcon, Loader2, ChevronLeft, Zap, UserPlus } from 'lucide-react';
 
 interface AuthFlowProps {
